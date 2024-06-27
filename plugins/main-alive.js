@@ -1,10 +1,10 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   // Sound
   let name = m.pushName || conn.getName(m.sender)
-  var vn = 'https://cdn.jsdelivr.net/gh/Guru322/GURU-BOT@main/Assets/mp3/Alive.mp3'
-  let url = 'https://github.com/Guru322/GURU-BOT'
-  let murl = 'https://youtu.be/DibiLc17dh0?si=xp9bQ-_frEyDB1-i'
-  let img = 'https://cdn.wallpapersafari.com/71/19/7ZfcpT.png'
+  var vn = 'https://github.com/Samridhya01/GURU-BOT/raw/main/Assets/mp3/Alive.mp3'
+  let url = 'https://github.com/Samridhya01/GURU-BOT'
+  let murl = 'https://youtu.be/'
+  let img = 'https://mcdn.wallpapersafari.com/medium/80/4/t5oI4Y.jpg'
   let con = {
     key: {
       fromMe: false,
@@ -31,9 +31,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
       mentionedJid: [m.sender],
       externalAdReply: {
         title: 'I AM ALIVE',
-        body: 'GURU BOT',
+        body: 'Samriddho',
         thumbnailUrl: img,
-        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+        sourceUrl: 'https://chat.whatsapp.com/C4NU6KefgoLL9W8vpbhbEY',
         mediaType: 1,
         renderLargerThumbnail: true,
       },
