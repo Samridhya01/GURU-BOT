@@ -51,6 +51,6 @@ let handler = async (m, { conn }) => {
 
 handler.help = ['edit']
 handler.tags = ['edit']
-handler.command = ['taddy']
+handler.command = ['teddy']
 
 export default handler
