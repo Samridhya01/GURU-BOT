@@ -180,6 +180,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     ⎪⌲👑 _${usedPrefix}hornycard_
     ⎪⌲👑 _${usedPrefix}ytcomment_
     ⎪⌲👑 _${usedPrefix}stupid_
+    ⎪⌲👑 _${usedPrefix}family_
+    ⎪⌲👑 _${usedPrefix}Period_
     ⎪⌲👑 _${usedPrefix}lolicon_
     ┗━━━ʕ•㉨•ʔ━━━┛` //
       break
