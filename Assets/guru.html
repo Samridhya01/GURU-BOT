@@ -3,60 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GURU-BOT Status</title>
+    <title>Welcome to our Bot Service</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000); /* RGB gradient background */
-            background-size: 400% 400%;
-            animation: backgroundGradient 10s linear infinite;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #ecf0f1; /* Text color */
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
+            position: relative;
             overflow: hidden;
-        }
-        .status {
-            font-size: 36px;
-            font-weight: bold;
-            color: black; /* Text color */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            animation: moveRotate 4s linear infinite;
-            position: absolute;
-        }
-
-        @keyframes moveRotate {
-            0% {
-                top: 0;
-                left: 0;
-                transform: rotate(0deg);
-            }
-            25% {
-                top: 0;
-                left: calc(100% - 300px);
-                transform: rotate(90deg);
-            }
-            50% {
-                top: calc(100% - 100px);
-                left: calc(100% - 300px);
-                transform: rotate(180deg);
-            }
-            75% {
-                top: calc(100% - 100px);
-                left: 0;
-                transform: rotate(270deg);
-            }
-            100% {
-                top: 0;
-                left: 0;
-                transform: rotate(360deg);
-            }
+            background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #00ff00, #0000ff, #9900ff, #ff0000); /* RGB color background */
+            background-size: 600% 600%;
+            animation: backgroundGradient 10s linear infinite; /* Background gradient animation */
         }
 
         @keyframes backgroundGradient {
@@ -67,9 +31,242 @@
                 background-position: 100% 50%;
             }
         }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #3498db; /* Initial text color */
+            animation: colorChange 5s infinite alternate; /* Text color change animation */
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #3498db; /* Initial text color */
+            }
+            50% {
+                color: #e74c3c; /* Color change to red at 50% */
+            }
+            100% {
+                color: #3498db; /* Back to initial text color at 100% */
+            }
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        a {
+            color: #3498db; /* Link color */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #2980b9; /* Hover color */
+        }
+
+        #cyber-type {
+            font-family: 'Courier New', monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #00f;
+            animation: typing 1s steps(30) infinite;
+            margin-top: 20px;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        /* Video styling */
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Audio styling */
+        audio {
+            display: none; /* Hide the audio player */
+        }
+
+        /* Play button styling */
+        #play-button {
+                position: absolute;
+                top: 10px;
+                right: 0px;
+                font-size: 1.5em;
+                cursor: pointer;
+            top: 10px;
+            left: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        /* Heartbeat styling */
+        #heartbeat {
+            font-size: 2em;
+            color: #e74c3c; /* Heart color */
+            animation: heartbeat 1s infinite alternate;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* QR Code styling */
+        #qr-code {
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* View count and live clock styling */
+        #view-count {
+            font-size: 1.2em;
+            color: #ecf0f1;
+            margin-top: 10px;
+        }
+
+        #live-clock {
+            font-size: 1.2em;
+            color: #ecf0f1;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
-    <div class="status">GURU BOT Online</div>
+    <iframe src="https://shavetape.cash/e/4DjKag4OPyhKQQ6/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
+    <h1>Welcome to our Bot Service</h1>
+    <p>Bot Admin: Samridhya Santra</p>
+    <p>Join our <a href="https://chat.whatsapp.com/EV116xAeoHRBBK9TFLcTIY" target="_blank">WhatsApp Group</a></p>
+    
+    <div>
+        <div id="cyber-type">_</div>
+    </div>
+
+    <!-- Video with song -->
+    <video autoplay loop muted>
+        <source src="https://github.com/Samridhya01/GURU-BOT/raw/main/Assets/html/htmlV.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Audio for the video -->
+    <audio id="background-audio" controls loop>
+        <source src="https://github.com/Samridhya01/GURU-BOT/raw/main/Assets/html/htmla.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Play button for background music -->
+    <div id="play-button" onclick="playBackgroundAudio()">
+        ▶️ Play Music
+    </div>
+
+    <!-- Heartbeat -->
+    <div id="heartbeat">&hearts;</div>
+
+    <!-- QR Code -->
+    <a href="https://wa.link/yuz0j6" target="_blank" id="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.link/yuz0j6" alt="QR Code">
+        <p>Tap here</p>
+    </a>
+
+    <!-- View count and live clock -->
+    <div id="view-count">Views: <span id="count">0</span></div>
+    <div id="live-clock"></div>
+
+    <script>
+        // JavaScript for cyber typing effect
+        const suggestionBox = document.getElementById('cyber-type');
+        const suggestions = ["Type your suggestions here", "We value your feedback", "Make our bot better!"];
+
+        let index = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < suggestions[index].length) {
+                suggestionBox.innerHTML += suggestions[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 50);
+            } else {
+                setTimeout(erase, 1000);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                suggestionBox.innerHTML = suggestions[index].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 50);
+            } else {
+                index = (index + 1) % suggestions.length;
+                setTimeout(type, 500);
+            }
+        }
+
+        type();  // Start the typing effect
+
+        // Randomly show XD or SAMRAT after 10 seconds
+        setTimeout(() => {
+            const randomTexts = document.querySelectorAll('.random-text');
+            const randomIndex = Math.floor(Math.random() * randomTexts.length);
+            const randomText = randomTexts[randomIndex];
+            randomText.style.display = 'block';
+
+            // Hide the text after 2 seconds
+            setTimeout(() => {
+                randomText.style.display = 'none';
+            }, 2000);
+        }, 10000);
+
+        // View count
+        let count = 0;
+        const countElement = document.getElementById('count');
+
+        function updateViewCount() {
+            count++;
+            countElement.textContent = count;
+        }
+
+        // Update view count every 10 seconds
+        setInterval(updateViewCount, 10000);
+
+        // Live clock
+        function updateLiveClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const date = now.toDateString();
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('live-clock').textContent = `${date} - ${timeString}`;
+        }
+
+        // Update live clock every second
+        setInterval(updateLiveClock, 1000);
+
+        // Function to play background audio
+        function playBackgroundAudio() {
+            const audio = document.getElementById('background-audio');
+            audio.play();
+            document.getElementById('play-button').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
