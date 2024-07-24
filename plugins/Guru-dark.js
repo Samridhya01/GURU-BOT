@@ -4,22 +4,22 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   try {
     if (!text) throw 'uhm.. what do you want to say?';
     await m.react('🤖');
-    let username = m.sender.split('@')[0];
+
     const prompt = encodeURIComponent(text);
-    let apiurl = `https://gpt4.guruapi.tech/bing?username=${username}&query=${prompt}`;
+    let apiurl = `https://dark.guruapi.tech/egpt?prompt=${prompt}`;
 
     const result = await fetch(apiurl);
     const response = await result.json();
     
-    if (!response.result) throw 'No result found';
+    if (!response.message) throw 'No result found';
 
-    const replyText = response.result;
+    const replyText = response.message;
     await conn.sendButton(
       m.chat, 
       replyText, 
       author, 
-      'https://techcrunch.com/wp-content/uploads/2023/11/microsoft-copilot-bing.jpg', 
-      [['Go with Gpt', `.gpt ${text}`]], 
+      'https://letemoinhaiti.com/home/wp-content/uploads/2024/03/img_9025-1-850x560.jpg', 
+      [['Script', `.sc`]], 
       null, 
       [['Follow Me', `https://github.com/Guru322`]], 
       m
@@ -30,9 +30,9 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   }
 };
 
-handler.help = ['bing <text>'];
+handler.help = ['darky <text>'];
 handler.tags = ['tools'];
-handler.command = /^(bing)$/i;
+handler.command = ['darky', 'darkgpt']
 
 export default handler;
 

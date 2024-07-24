@@ -1,51 +1,38 @@
-import displayLoadingScreen from '../lib/loading.js'
-import fetch from 'node-fetch'
-import { delay } from '@whiskeysockets/baileys'
+import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   try {
-    if (!text) throw `uhm.. what do you want to say?`
-    m.react('🤖')
-    //await displayLoadingScreen(conn, m.chat)
+    if (!text) throw 'uhm.. what do you want to say?';
+    await m.react('🤖');
 
-    const prompt = encodeURIComponent(text)
-    let apiurl = `https://ultimetron.guruapi.tech/gpt4?prompt=${prompt}`
+    const prompt = encodeURIComponent(text);
+    let apiurl = `https://ultimetron.guruapi.tech/gpt4?prompt=${prompt}`;
 
-    const result = await fetch(apiurl)
-    const response = await result.json()
-    console.log(response)
-    const textt = response.result.reply
-    await typewriterEffect(conn, m, m.chat, textt)
+    const result = await fetch(apiurl);
+    const response = await result.json();
+    
+    if (!response.result) throw 'No result found';
+
+    const replyText = response.result;
+    await conn.sendButton(
+      m.chat, 
+      replyText, 
+      author, 
+      'https://telegra.ph/file/c3f9e4124de1f31c1c6ae.jpg', 
+      [['Script', `.sc`]], 
+      null, 
+      [['Follow Me', `https://github.com/Guru322`]], 
+      m
+    );
   } catch (error) {
-    console.error(error)
-    m.reply('Oops! Something went wrong. , we are trying had to fix it asap')
+    console.error(error);
+    m.reply('Oops! Something went wrong. We are trying hard to fix it ASAP.');
   }
-}
-handler.help = ['gemini <text>']
-handler.tags = ['tools']
-handler.command = /^(gpt4)$/i
+};
 
-export default handler
+handler.help = ['gpt4 <text>'];
+handler.tags = ['tools'];
+handler.command = /^(gpt4)$/i;
 
-async function typewriterEffect(conn, quoted, from, text) {
-  let { key } = await conn.sendMessage(from, { text: 'Thinking...' }, { quoted: quoted })
+export default handler;
 
-  for (let i = 0; i < text.length; i++) {
-    const noobText = text.slice(0, i + 1)
-    await conn.relayMessage(
-      from,
-      {
-        protocolMessage: {
-          key: key,
-          type: 14,
-          editedMessage: {
-            conversation: noobText,
-          },
-        },
-      },
-      {}
-    )
-
-    await delay(100) // Adjust the delay time (in milliseconds) as needed
-  }
-}
