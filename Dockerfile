@@ -1,6 +1,6 @@
 FROM quay.io/gurusensei/gurubhay:latest
 
-RUN git clone https://github.com/Guru322/GURU-Ai /root/guru
+RUN git clone https://github.com/Samridhya01/GURU-BOT /root/guru
 
 WORKDIR /root/guru/
 
