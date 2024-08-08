@@ -556,10 +556,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
+                    title: '​🇸​​🇦​​🇲​​🇷​​🇦​​🇹​ ​🇽​​🇩​ ​🇧​​🇴​​🇹',
                     body: 'welcome to Group',
                     thumbnailUrl: welcomeApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                    sourceUrl: 'https://chat.whatsapp.com/C4NU6KefgoLL9W8vpbhbEY',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
@@ -613,10 +613,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
+                    title: '​🇸​​🇦​​🇲​​🇷​​🇦​​🇹​ ​🇽​​🇩​ ​🇧​​🇴​​🇹',
                     body: 'Goodbye from  Group',
                     thumbnailUrl: leaveApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                    sourceUrl: 'https://chat.whatsapp.com/C4NU6KefgoLL9W8vpbhbEY',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
