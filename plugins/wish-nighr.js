@@ -1,5 +1,5 @@
             let handler = async (m, { conn }) => {
-                let av = `https://github.com/Samridhya01/ZUSYCO-MD/raw/main/Sticker/WhatsApp%20Audio%202024-04-14%20at%2011.05.05_a7c55d5b.waptt`;
+                let av = `./Assets/mp3/GoodNight.mp3`;
                 m.react('🌃');
 
                 m.reply(`${pickRandom(["Sweet dreams, beautiful",
