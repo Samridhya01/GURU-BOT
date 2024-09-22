@@ -16,9 +16,12 @@
 </p>
 
 ####  
-GURU-BOT- Simple Multi Device whatsapp bot.
+GURU-Ai- Simple Multi Device whatsapp bot.
 
 ***
+## important
+
+This project  uses Mega.nz's services exclusively for generating session IDs. The creator confirms that the functionality is used only for its intended purpose and not for any unauthorized or malicious activities. It is ultimately up to the user to decide whether to utilize the project or not.
 
 #### SETUP
 
@@ -31,7 +34,7 @@ GURU-BOT- Simple Multi Device whatsapp bot.
 2. Get Session ID (Server 1)
    > For Indian users Connect to a usa Vpn while login
     
-     <a href='https://express-pairing-code-s4jl.onrender.com' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+     <a href='https://session.guruapi.tech' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
 3. Get Session ID (Server 2) (use this if server 1 Doesn't work)
